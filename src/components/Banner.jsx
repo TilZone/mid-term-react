@@ -13,7 +13,7 @@ export default function Banner({ movie }) {
       </div>
 
       <div className="relative z-10 h-full flex items-center px-12 lg:px-16">
-        <div className="max-w-2xl">
+        <div className="w-[40%]">
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {movie.movieName}
           </h1>

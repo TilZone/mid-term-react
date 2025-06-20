@@ -1,10 +1,10 @@
 export default function Navbar() {
     return (
-        <header className="w-full bg-[#0F172A] shadow-lg sticky top-0 z-50 border-b border-gray-800">
+        <header className="w-full bg-[#192026] shadow-lg sticky top-0 z-50 border-b border-gray-800">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8 py-4">
                 <div className="flex items-center space-x-2">
                     <h1 className="text-2xl font-bold bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
-                    Anonime
+                        Anonime
                     </h1>
                 </div>
 

@@ -15,7 +15,7 @@ export default function App() {
     <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-Poppins">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-6 lg:px-8 py-12 space-y-16">
+      <main className="max-w-[1440px] mx-auto px-[83px] py-[15px] space-y-16">
         <section>
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
@@ -30,7 +30,7 @@ export default function App() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-white">
               New Releases
-            </h2>         
+            </h2>
           </div>
 
           <MovieList
