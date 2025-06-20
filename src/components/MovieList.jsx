@@ -2,7 +2,7 @@ import MovieCard from './MovieCard';
 
 export default function MovieList({ movies, onSelect }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div className="flex gap-4 overflow-x-auto pb-2">
       {movies.map((movie) => (
         <MovieCard key={movie.id} movie={movie} onSelect={onSelect} />
       ))}
