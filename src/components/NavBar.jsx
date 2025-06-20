@@ -7,7 +7,7 @@ export default function Navbar() {
                         <span className="text-white font-bold text-sm">M</span>
                     </div>
                     <h1 className="text-2xl font-bold bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
-                        MovieStream
+                    Anonime
                     </h1>
                 </div>
 
@@ -15,7 +15,7 @@ export default function Navbar() {
                     <div className="relative hidden md:block">
                         <input
                             type="text"
-                            placeholder="Search movies..."
+                            placeholder="Search anime or movie."
                             className="bg-gray-800 border border-gray-700 rounded-full px-4 py-2 pl-10 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-64"
                         />
                         <svg className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
