@@ -2,14 +2,21 @@ export default function MovieCard({ movie, onSelect }) {
   return (
     <div
       onClick={() => onSelect(movie)}
-      className="min-w-[160px] cursor-pointer bg-white rounded-xl shadow hover:shadow-md hover:scale-105 transition"
+      className="w-[220px] cursor-pointer bg-[#232A32] rounded-xl overflow-hidden shadow hover:shadow-lg hover:scale-[1.02] transition"
     >
-      <img src={movie.image} className="w-full h-48 object-cover rounded-t-xl" />
-      <div className="p-2">
-        <h3 className="text-sm font-semibold truncate">{movie.movieName}</h3>
-        <p className="text-xs text-gray-500">Episode {movie.episode}</p>
+      <div className="relative">
+        <img
+          src={movie.image}
+          alt={movie.movieName}
+          className="w-full h-60 object-cover"
+        />
+        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-3 py-1 rounded-full">
+          Episode {movie.episode}
+        </div>
+      </div>
+      <div className="py-3 px-2 text-center">
+        <h3 className="text-sm font-semibold text-white line-clamp-2">{movie.movieName}</h3>
       </div>
     </div>
-
   );
 }
