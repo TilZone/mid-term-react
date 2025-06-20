@@ -1,17 +1,30 @@
 export default function Navbar() {
     return (
-        <header className="w-full bg-[#232A32] shadow sticky top-0 z-50">
-            <div className="max-w-screen-2xl mx-auto flex justify-between items-center px-6 lg:px-20 py-5">
-                <h1 className="text-3xl font-bold tracking-wide text-indigo-500">MovieStream</h1>
-                <div className="flex items-center gap-4">
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        className="hidden md:block px-4 py-2 border border-gray-600 bg-[#1F2833] rounded-md text-sm text-white placeholder-gray-400 focus:outline-none focus:ring focus:ring-indigo-400"
-                    />
-                    <div className="w-10 h-10 bg-gray-400 rounded-full" />
+        <header className="w-full bg-[#0F172A] shadow-lg sticky top-0 z-50 border-b border-gray-800">
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8 py-4">
+                <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">M</span>
+                    </div>
+                    <h1 className="text-2xl font-bold bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
+                        MovieStream
+                    </h1>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                    <div className="relative hidden md:block">
+                        <input
+                            type="text"
+                            placeholder="Search movies..."
+                            className="bg-gray-800 border border-gray-700 rounded-full px-4 py-2 pl-10 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-64"
+                        />
+                        <svg className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full cursor-pointer hover:scale-105 transition-transform" />
                 </div>
             </div>
         </header>
     );
-}
+};

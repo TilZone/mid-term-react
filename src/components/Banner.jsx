@@ -1,20 +1,27 @@
 export default function Banner({ movie }) {
   if (!movie) return null;
+
   return (
-    <div className="relative w-full h-[480px] rounded-xl overflow-hidden shadow-xl">
-      <img
-        src={movie.image}
-        alt={movie.movieName}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
-      <div className="relative z-10 px-16 pb-20 pt-10 flex flex-col justify-end items-start h-full w-[40%]">
-        <h1 className="text-4xl md:text-5xl font-bold line-clamp-2 mb-4">{movie.movieName}</h1>
-        <p className="text-base text-white/90 line-clamp-4 mb-6">{movie.description}</p>
-        <button className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 text-sm w-max">
-          ▶ Watch Now
-        </button>
+    <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-r from-gray-900 to-gray-800">
+      <div className="absolute inset-0">
+        <img
+          src={movie.image}
+          alt={movie.movieName}
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+      </div>
+
+      <div className="relative z-10 h-full flex items-center px-12 lg:px-16">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            {movie.movieName}
+          </h1>
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed line-clamp-4">
+            {movie.description}
+          </p>
+        </div>
       </div>
     </div>
   );
-}
+};
