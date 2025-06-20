@@ -12,7 +12,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+    <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-Poppins">
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-6 lg:px-8 py-12 space-y-16">

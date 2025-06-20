@@ -3,9 +3,6 @@ export default function Navbar() {
         <header className="w-full bg-[#0F172A] shadow-lg sticky top-0 z-50 border-b border-gray-800">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8 py-4">
                 <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-purple-600 rounded-lg flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">M</span>
-                    </div>
                     <h1 className="text-2xl font-bold bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
                     Anonime
                     </h1>
@@ -22,7 +19,6 @@ export default function Navbar() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full cursor-pointer hover:scale-105 transition-transform" />
                 </div>
             </div>
         </header>
