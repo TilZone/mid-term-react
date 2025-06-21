@@ -8,11 +8,32 @@ export default function App() {
   const [selectedMovie, setSelectedMovie] = useState(movies[0]);
 
   const handleMovieSelect = (movie) => {
+    if (!movie || typeof movie !== 'object') {
+      console.warn('Invalid movie object provided to handleMovieSelect');
+      return;
+    }
+    
+    if (!movie.id || !movie.movieName || !movie.image) {
+      console.warn('Movie object missing required properties');
+      return;
+    }
+    
     setSelectedMovie(movie);
   };
 
+  if (!movies || !Array.isArray(movies) || movies.length === 0) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-Poppins flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">No movies available</h1>
+          <p className="text-gray-400">Please check your data source.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-Poppins">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-Poppins">
       <Navbar />
 
       <main className="max-w-[1440px] mx-auto px-[83px] py-[15px] space-y-16">
