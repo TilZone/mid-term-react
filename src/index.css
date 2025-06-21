@@ -4,6 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
+  color: white !important;
+  background-color: #111827 !important;
+}
+
+#root {
+  min-height: 100vh;
+  color: white !important;
+  background-color: #111827 !important;
+}
+
+/* Ensure text color is white */
+.text-white {
+  color: white !important;
+}
+
+/* Global text color override */
+* {
+  color: inherit;
+}
+
+/* Debug styles */
+.debug {
+  border: 2px solid red !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
 }
